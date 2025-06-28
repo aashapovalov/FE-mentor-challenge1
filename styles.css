@@ -1,11 +1,14 @@
 :root {
   box-sizing: border-box;
+  --body-background: hsl(212, 45%, 89%);
+  --card-background: white;
+  --h1-color: hsl(218, 44%, 22%);
+  --p-color: hsl(216, 15%, 48%);
 }
 
 body {
     font-family: 'Outfit', sans-serif;
-    font-size: 15px;
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--body-background);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,30 +18,33 @@ body {
 
 section {
     display: block;
-    width: 350px;
+    width: 316px;
     margin: 0 auto;
-    background-color: white;
+    background-color: var(--card-background);
     border-radius: 20px;
-    padding: 17px 0;
+    padding: 15px 0;
 }
 
 
 img  {
     display: block;
     margin: 0 auto;
-    width: 316px;
+    width: 286px;
     border-radius: 10px;
 }
 
 h1 {
     text-align: center;
+     font-size: 1.24rem;
     font-weight: 700;
-    margin: 25px 45px;
-    color: hsl(218, 44%, 22%);
+    margin: 20px 45px;
+    color: var(--h1-color);
 }
 
 p {
     text-align: center;
+    font-size: 0.875rem;
     margin: 0 45px 25px;
-    color: hsl(216, 15%, 48%);
+    font-weight: 400;
+    color: var(--p-color);
 }
